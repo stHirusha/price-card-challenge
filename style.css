@@ -1,0 +1,159 @@
+html {
+      box-sizing: border-box;
+}
+
+h2,h4,p {
+  margin: 0px
+  
+}
+
+*,*::before,*::after {
+      box-sizing: inherit;
+  
+}
+
+body {
+  padding: 20px;
+  
+}
+
+#card {
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow:2px 3px 7px 0px rgba(0,0,0,0.35);
+  width: 600px;
+  height: 400px;
+  font-family: 'Karla';
+  font-size: 16px;
+  
+}
+
+#top-section {
+  width: 100%;
+  height: 45%;
+  padding: 20px;
+  
+}
+
+#bottom-section {
+  width: 100%;
+  height: 55%;  
+  color: white;
+}
+
+#right {
+  background-color:#2EBFBD;
+  
+}
+
+#left {
+  background-color: #2ab2af;  
+  
+}
+
+#left,#right{
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  vertical-align: top;
+  padding: 25px;
+  
+}
+
+#top-section h2{
+  color:#2ab2af;
+  margin-bottom: 25px;
+  
+}
+
+#top-section h4{
+  color:#c0df34;
+  margin-bottom:10px;
+
+}
+
+#top-section p{
+  color:#98a6bd;
+
+}
+
+#p1, #p2 {
+  display: inline-block;
+
+}
+
+#bottom-section button{
+  color: white;
+  background-color: #c0df34;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  box-shadow:2px 3px 7px 0px rgba(0,0,0,0.35);
+
+}
+
+#bottom-section button:hover{
+  cursor: pointer;
+  background-color: #A9C42D;
+  transform: scale(1.05); 
+  
+}
+
+#p1 {
+  font-weight: 700;
+  font-size: 1.5rem !important;
+  margin-bottom: 10px !important;
+  
+}
+
+#p2{
+  position: relative;
+  top: -4px;
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin-left: 5px;
+  margin-bottom: 0px !important;
+  
+}
+
+#left h4{
+  margin-bottom: 20px;
+  
+}
+
+#left p{
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+  
+}
+
+#right ul{
+  padding-left: 0px;
+  list-style: none;
+  font-size: 0.9rem;
+  opacity: 0.8;
+    
+}
+
+@media (max-width: 650px){
+  #left,#right,#card{
+    width : 100%;
+    height : auto;
+  }
+  h2,h4,p,button,li{
+    text-align: center;
+  }
+  button{
+    width:auto;
+  }
+  #price {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  #p2{
+    display:relative;
+    margin-top:8px;
+  }
+}
